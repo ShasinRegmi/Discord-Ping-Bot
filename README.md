@@ -1,17 +1,17 @@
 <h1> this bot lets you ping your friends </h1>
 
+<h2>A simple Discord bot built with Python and the discord.py library.</h2>
 
-A simple Discord bot built with Python and the discord.py library. This bot can respond to commands and interact with server members.
 Requirements
-    -Python 3.8 or newer
-    -discord.py library
+    - Python 3.8 or newer
+    - discord.py library
 
 Clone the Repository
--git clone https://github.com/your-username/discord-bot.git
--cd discord-bot
+- git clone https://github.com/your-username/discord-bot.git
+- cd discord-bot
 
 Use pip to install the required library:
--pip install discord (or discord.py)
+- pip install discord (or discord.py)
 
 Create a Bot on Discord
   - Go to the Discord Developer Portal.(https://discord.com/developers/applications)
