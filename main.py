@@ -25,4 +25,4 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 Client = Client(intents=intents)
-Client.run('#token') #insert your token here
+Client.run('') #insert your token here
