@@ -3,21 +3,21 @@
 
 A simple Discord bot built with Python and the discord.py library. This bot can respond to commands and interact with server members.
 Requirements
-    Python 3.8 or newer
-    discord.py library
+    -Python 3.8 or newer
+    -discord.py library
 
 Clone the Repository
-git clone https://github.com/your-username/discord-bot.git
-cd discord-bot
+-git clone https://github.com/your-username/discord-bot.git
+-cd discord-bot
 
 Use pip to install the required library:
-pip install discord (or discord.py)
+-pip install discord (or discord.py)
 
 Create a Bot on Discord
-    Go to the Discord Developer Portal.(https://discord.com/developers/applications)
-    Click "New Application" and give it a name.
-    Under the "Bot" tab, click "Add Bot" and copy the bot token.
-    Under "OAuth2 > URL Generator", check bot and Administrator permissions. Copy the generated URL and invite the bot to your server.
+  - Go to the Discord Developer Portal.(https://discord.com/developers/applications)
+  - Click "New Application" and give it a name.
+  - Under the "Bot" tab, click "Add Bot" and copy the bot token.
+  - Under "OAuth2 > URL Generator", check bot and Administrator permissions. Copy the generated URL and invite the bot to your server.
 
 Configure the Bot
 - Add your token inside client.run()
