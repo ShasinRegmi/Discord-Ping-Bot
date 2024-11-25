@@ -24,7 +24,6 @@ class Client(commands.Bot):
         if message.content.startswith('hello'): #bot will reply if the message starts with hello
              await message.channel.send(f'Yo man {message.author.mention}') #pauses the execution of the on_message coroutine until the message is sent.
 
-
         if message.content == '1':
             # Loop to mention the user repeatedly
           while True:
@@ -50,4 +49,4 @@ async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("<@{}>".format(704346583143153797))
 
 
-Client.run() #insert your token here
+Client.run('') #insert your token here
