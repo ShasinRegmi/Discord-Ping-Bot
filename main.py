@@ -1,10 +1,20 @@
 import discord
 from discord.ext import commands #for commands
+from discord import app_commands #for slash commands
 import asyncio
 
-class Client(discord.Client):
+GUILD_ID = discord.Object(id="") 
+class Client(commands.Bot):
     async def on_ready(self): #async function
         print(f'Logged on as {self.user}.')
+
+        try:
+            guild = discord.Object(id=1251153119459410002)
+            synced = await self.tree.sync(guild= guild)
+            print(f'Synced {len(synced)} commands to guild {guild.id}')
+
+        except Exception as e:
+            print(f'Failed to sync commands: {e}')
    
    
     async def on_message(self, message):
@@ -23,6 +33,21 @@ class Client(discord.Client):
 
 intents = discord.Intents.default()
 intents.message_content = True
+Client = Client(command_prefix ="!",intents=intents)
 
-Client = Client(intents=intents)
-Client.run('') #insert your token here
+
+@Client.tree.command(name="pinggaud", description="Ping Gaud", guild= GUILD_ID)
+
+async def ping(interaction: discord.Interaction):
+     await interaction.response.send_message("<@{}>".format(530675632741285898))
+
+@Client.tree.command(name="pingshasin", description="Ping Shasin", guild= GUILD_ID)
+async def ping(interaction: discord.Interaction):
+    await interaction.response.send_message("<@{}>".format(774512861950640131))
+
+@Client.tree.command(name="pingozaru", description="Ping Ozaru", guild= GUILD_ID)
+async def ping(interaction: discord.Interaction):
+    await interaction.response.send_message("<@{}>".format(704346583143153797))
+
+
+Client.run() #insert your token here
