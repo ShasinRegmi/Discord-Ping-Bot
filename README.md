@@ -7,7 +7,7 @@ Requirements
     - discord.py library
 
 Clone the Repository
-- git clone https://github.com/your-username/discord-bot.git
+- git clone https://github.com/ShasinRegmi/discord-bot.git
 - cd discord-bot
 
 Use pip to install the required library:
