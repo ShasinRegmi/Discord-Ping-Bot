@@ -34,6 +34,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 Client = Client(command_prefix ="!",intents=intents)
 
+#for pinging specfic person/people (not the most efficient way)
 
 @Client.tree.command(name="pinggaud", description="Ping Gaud", guild= GUILD_ID)
 
