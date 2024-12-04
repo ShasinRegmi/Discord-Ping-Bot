@@ -3,8 +3,8 @@
 <h2>A simple Discord bot built with Python and the discord.py library.</h2>
 
 Requirements
-    - Python 3.8 or newer
-    - discord.py library
+ - Python 3.8 or newer
+ - discord.py library
 
 Clone the Repository
 - git clone https://github.com/ShasinRegmi/Discord-Ping-Bot/.git
